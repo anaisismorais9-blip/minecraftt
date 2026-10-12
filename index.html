@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft 3D Moderno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Mira Central -->
+    <div id="crosshair">+</div>
+
+    <!-- Tela de Instruções / Bloqueio de Ponteiro -->
+    <div id="instructions">
+        <h1>Clique para Jogar</h1>
+        <p>
+            <strong>W, A, S, D</strong> : Mover<br>
+            <strong>ESPAÇO</strong> : Pular<br>
+            <strong>BOTÃO ESQUERDO DO MOUSE</strong> : Quebrar Bloco<br>
+            <strong>BOTÃO DIREITO DO MOUSE</strong> : Colocar Bloco<br>
+            <strong>TECLAS 1 a 4</strong> : Selecionar Bloco
+        </p>
+    </div>
+
+    <!-- Hotbar de Seleção de Bloco -->
+    <div id="hotbar">
+        <div class="slot active" data-slot="1">1: Grama</div>
+        <div class="slot" data-slot="2">2: Terra</div>
+        <div class="slot" data-slot="3">3: Pedra</div>
+        <div class="slot" data-slot="4">4: Madeira</div>
+    </div>
+
+    <!-- Importando Three.js e PointerLockControls via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/PointerLockControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
